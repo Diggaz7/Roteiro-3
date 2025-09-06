@@ -1,0 +1,10 @@
+using System;
+
+public class Item
+{
+    public string preco { get; set; }
+}
+public class Pedido
+{
+    public Item item;
+}
