@@ -1,0 +1,28 @@
+using System;
+
+public class Animal
+{
+
+    public string? nome;
+
+    public void EmitirSom(string som)
+    {
+
+        Console.WriteLine($"{som}");
+
+    }
+}
+public class Pinto : Animal
+{
+
+    static void Main()
+    {
+
+        Pinto p = new Pinto();
+        p.EmitirSom("Piu piu");
+        p.nome = "Pinto";
+        Console.WriteLine($"{p.nome}");
+
+    }
+
+}
