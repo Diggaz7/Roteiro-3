@@ -1,0 +1,69 @@
+using System;
+
+public interface IVoar
+{
+
+    void Voar();
+
+}
+public interface INadar
+{
+
+    void Nadar();
+
+}
+public class Pato : IVoar, INadar
+{
+
+    public void Voar()
+    {
+
+        Console.WriteLine("Pode voar");
+
+    }
+    public void Nadar()
+    {
+
+        Console.WriteLine("Pode nadar");
+    }
+
+}
+public class Cachorro : INadar
+{
+
+    public void Nadar()
+    {
+
+        Console.WriteLine("Pode nadar");
+
+    }
+
+}
+public class Tubarao : INadar
+{
+
+    public void Nadar()
+    {
+
+        Console.WriteLine("Pode nadar");
+
+    }
+}
+public class Program
+{
+
+    static void Main()
+    {
+
+        Pato pato = new Pato();
+        pato.Nadar();
+        pato.Voar();
+
+        Cachorro cachorro = new Cachorro();
+        cachorro.Nadar();
+
+        Tubarao tubarao = new Tubarao();
+        tubarao.Nadar();
+
+    }
+}
